@@ -1,0 +1,11 @@
+class main(){constructor(freshnessPref,priceRange,timeDelay,weight_array){
+this.fresh=freshnessPref;
+this.price=priceRange;
+this.time=timeDelay;
+this.weight=weight_array;
+}
+calculateIndex(){
+value=fresh*weight_array[0]+price*weight_array[1]+time*weight_array[2];
+return value;
+}
+}
