@@ -1,0 +1,4 @@
+import urllib
+with urllib.request.urlopen(http://api.nasa.gov/planetary/earth/imagery) as response:
+file=response.read()
+
