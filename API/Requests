@@ -1,0 +1,3 @@
+import urllib
+with urllib.request.urlopen(https://api.nasa.gov/DONKI/WSAEnlilSimulations?startDate=2016-01-06&endDate=2016-01-06&api_key=DEMO_KEY) as response:
+file=response.read()
