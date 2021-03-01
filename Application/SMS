@@ -1,0 +1,10 @@
+SmsManager smsManager = SmsManager.getDefault();
+smsManager.sendTextMessage("phoneNo", null, "sms message", null, null);
+Intent sendIntent = new Intent(Intent.ACTION_VIEW);
+sendIntent.putExtra("sms_body", "default content"); 
+sendIntent.setType("vnd.android-dir/mms-sms");
+startActivity(sendIntent);
+<uses-permission android:name="android.permission.SEND_SMS" />
+static SmsManager getDefault()
+void sendMultipartTextMessage(String destinationAddress, String scAddress, ArrayList<String> parts, ArrayList<PendingIntent> sentIntents, ArrayList<PendingIntent> deliveryIntents)
+void sendDataMessage(String destinationAddress, String scAddress, short destinationPort, byte[] data, PendingIntent sentIntent, PendingIntent deliveryIntent)
